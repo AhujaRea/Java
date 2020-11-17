@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.util.Random;
+class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    Random rand = new Random ();
+
+    int n, n1, n2, n3, n4;
+
+    n = rand.nextInt(4 -1) + 1;
+
+    n1 = 63;
+    n2 = 64;
+    n3 = 95;
+    n4 = 96;
+
+    if ( n == 1) {
+      do{
+        n1 += 2;
+        System.out.println((char)n1);
+      } while ( n1 < 89);
+
+    } else if ( n == 2) {
+      do {
+        n2 += 2;
+        System.out.println((char)n2);
+      } while (n2 < 89);
+
+    } else if ( n == 3) {
+      do {
+        n3 += 2;
+        System.out.println((char)n3);
+
+      } while (n3 < 121);
+    } else {
+      do {
+        n4 += 2;
+        System.out.println((char)n4);
+
+      } while (n4 < 121);
+    }
+
+
+  }
+}
